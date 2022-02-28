@@ -1,159 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Emike's kitchen</title>
-</head>
-<body>
-        <header>
-            <a href="#" class="logo"><img src="./img/e-logo.jpeg" alt=""></a>
-           <nav class="navigate">
-                <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-           </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-           <div id="menu"><i class="fas fa-bars"></i></div>
-        </header>
-            <!--------Home----------->
-        <section id="home" class="home">
-            <h1>Best Cake in Town</h1>
-            <p>Emike's Kitchen offers the best<br> catering and cakes services in the World.</p>
-            <div class="home-btn">
-                <button>Book Now<i class="fas fa-angle-right"></i></button>
-            </div>
-        </section>
-        <!-----------about---------------->
-        <section id="about" class="about">
-           <div class="about-content">
-               <h2>OUR STORY</h2>
-               <p>Emike's Kitchen has evolved from generation
-                   to generation and has stood the test <br>
-                    time for creating and adding values to customers
-                     <br>by offering good and expectional service through
-                      great tasty meals and cakes
-               </p>
-               <button class="btn">Read More<i class="fas fa-angle-right"></i></button>
-           </div> 
-           <div class="image">
-               <img src="./img/e-4.jpeg" alt="">
-           </div>
-        </section>
-        <!-----------products-------------------->
-            <section id="product" class="product">
-                <h1 class="title">Our Most Popular <span>Cakes</span></h1>
-                <div class="cake-product">
-                    <div class="inner-cake-row">
-                        <div class="inner-cake-col">
-                            <img src="./img/e-9.jpeg" alt="">
-                            <p>#7000</p>
-                            <h2>foundant cake</h2>
-                            <h3>gluten- Sugar free</h3>
-                        </div>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/dist/style.css" />
 
-                        <div class="inner-cake-col">
-                            <img src="./img/e-10.jpeg" alt="">
-                            <p>#5000</p>
-                            <h2>foundant cake</h2>
-                            <h3>gluten- Sugar free</h3>
-                        </div>
+    <title>Frontend Mentor | Easybank landing page</title>
+  </head>
+  <body>
+  
 
-
-                        <div class="inner-cake-col">
-                            <img src="./img/e-11.jpeg" alt="">
-                            <p>#12,000</p>
-                            <h2>Creamy cake</h2>
-                            <h3>gluten- Sugar free</h3>
-                        </div>
-
-
-                        <div class="inner-cake-col">
-                            <img src="./img/e-12.jpeg" alt="">
-                            <p>#10,000</p>
-                            <h2>Wedding cake</h2>
-                            <h3>gluten- Sugar free</h3>
-                        </div>
-
-
-                        <div class="inner-cake-col">
-                            <img src="./img/e-7.jpeg" alt="">
-                            
-                           
-                            <p>#7000</p>
-                            <h2>Kids cake</h2>
-                            <h3>gluten- Sugar free</h3>
-                        </div>
-
-
-                        <div class="inner-cake-col">
-                            <img src="./img/e-5.jpeg" alt="">
-                            <p>#10,000</p>
-                            <h2>Customized cake</h2>
-                            <h3>gluten- Sugar free</h3>
-                        
-                        </div>
-
-                    </div>
-
-                </div>
-            </section>
-
-            <footer class="contact" id="contact">
-                <div class="cake-contact">
-                    <div class="cake-contact-row">
-                        <div class="cake-contact-col">
-                            <img src="./img/e-1.PNG" alt="contact" class="imgs">
-                        </div>
-                        <div class="cake-contact-col">
-                            <h1>Contact us</h1>
-                            <div class="social">
-                                <i class="fab fa-facebook"></i>
-                                <i class="fab fa-instagram"></i>
-                                <i class="fab fa-twitter"></i>
-                            </div>
-                            <p>33 sam ogunwe street igando new town,lagos state<br> +2347065437214</p>
-                            <p>We want to hear from you, write us:</p>
-                            <form action="#" method="get">
-                                <input type="text" name="name" id="name" placeholder="Please enter your name" required>
-                                <input type="text"  name="email" id="email" placeholder="Please enter your email" required>
-                                <input type="number" name="mobile" id="mobile" placeholder="Please enter your mobile" required>
-                                <textarea name="" id="" cols="10" rows="8" placeholder="Please leave a feedback"></textarea> <br>
-                                <button class="btn">Submit</button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="copyright">
-                        <a href="#home"><i class="fas fa-arrow-alt-circle-up"></i></a>
-                        <p>design by Sodbak</p>
-                    </div>
-                </div>
-            </footer>
-            
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-<script>
-    $(document).ready(function()
-    {
-        $('#menu').click(function()
-        {
-            $(this).toggleClass('fas fa-times');
-            $('.navigate').toggleClass('nav-toggle');
-        });
-
-        $(window).on('scroll load',function()
-        {
-            $(this).removeClass('fas fa-times');
-            $('.navigate').removeClass('nav-toggle');
-        });
-    }); 
-</script>
-</body>
+    <script src="/app/js/script.js"></script>
+  </body>
 </html>
